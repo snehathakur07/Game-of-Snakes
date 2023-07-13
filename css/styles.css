@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Fjalla One', sans-serif;
+}
+body{
+    background:rgb(51, 164, 51);
+}
+.container{
+    width:100vw;
+    height:100vh;
+    background-image: url("./asset/snake.png");
+    background-repeat:no-repeat;
+    background-size:20%;
+    background-position: bottom right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* mix-blend-mode:color-burn; */
+}
+#board{
+    width:90vmin;
+    height:92vmin;
+    border:1px solid black;
+    box-shadow: 0 0 5px black;
+    background:linear-gradient(rgb(191, 241, 114),rgb(101, 193, 101));
+    display:grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background:linear-gradient(rgb(109, 181, 1),green);
+    border-radius:12px;
+    transform:scale(1.02);
+    border:1px solid green;
+    box-shadow: 0 0 3px black;
+
+}
+.snake-body{
+    background-color:green;
+    border:2px solid rgb(170, 221, 93);
+    border-radius:12px;
+}
+.food{
+    border-radius: 50%;
+    background:linear-gradient(red,purple);
+    box-shadow: 0 0 2px black;
+}
+#score_board{
+    height:5vmin;
+    width:20vmin;
+    /* background: rgb(170, 221, 93); */
+    position:absolute;
+    right:15rem;
+    top:2rem;
+    font-size:2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
