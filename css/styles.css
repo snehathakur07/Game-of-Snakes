@@ -9,7 +9,7 @@ body{
 .container{
     width:100vw;
     height:100vh;
-    background-image: url("./asset/snake.png");
+    background-image: url("../asset/snake.png");
     background-repeat:no-repeat;
     background-size:20%;
     background-position: bottom right;
