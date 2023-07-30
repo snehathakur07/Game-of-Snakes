@@ -5,7 +5,7 @@ window.onload=()=>{
         document.querySelector("body").innerHTML="Please open on desktop";
     }
 }
-
+musicSound.play();
 
 // game constants 
 let inputDir = { x: 0, y: 0 };
@@ -50,6 +50,7 @@ function gameEngine() {
     setInterval(()=>{
         speed+=0.01;
     },10000);
+    // console.log(speed)
     //1. Updating the snake variable and food
     console.log(isCollide(snakeArr));
     if (isCollide(snakeArr)) {
@@ -62,6 +63,7 @@ function gameEngine() {
             { x: 5, y: 15 }
         ];
         score = 0;
+        speed=3;
     }
 
     // if eaten the food update the snakeArr
@@ -107,7 +109,6 @@ function gameEngine() {
 }
 
 
-musicSound.play();
 
 // main logic
 window.requestAnimationFrame(main);
